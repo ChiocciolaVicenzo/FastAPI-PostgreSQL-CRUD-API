@@ -10,7 +10,7 @@ router = APIRouter(prefix="/articles", tags=["Articles"])
 def create_article(articles: schemas.ArticlesCreate, db: Session = Depends(get_db)):
     return crud.create_articles(db, articles)
 
-@router.get("{article_id}", response_model=schemas.ArticlesOut)
+@router.get("/{article_id}", response_model=schemas.ArticlesOut)
 def get_id_article(article_id: int, db: Session = Depends(get_db)):
     db_article = crud.get_id_article(db, article_id)
     if not db_article:
