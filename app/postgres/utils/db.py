@@ -1,7 +1,12 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from app.postgres.utils.settings_db import Settings
+from dotenv import load_dotenv
+import os
+load_dotenv()  # Carica le variabili da .env
+
+class Settings:
+    database_url: str = os.getenv("DATABASE_URL")
 
 setting = Settings()
 DATABASE_URL = setting.database_url
