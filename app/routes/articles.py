@@ -36,8 +36,3 @@ def delete_article(article_id: int, db:Session = Depends(get_db)):
     db_article = crud.delete_article(db, article_id)
     if not db_article:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Article not found")
-<<<<<<< HEAD
-    return db_article
-=======
-    return db_article
->>>>>>> 135df6f877a338c2e2bba8803058ac727086b935
