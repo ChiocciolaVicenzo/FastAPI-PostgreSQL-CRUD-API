@@ -4,13 +4,11 @@ Supporta operazioni CRUD: create, get, put e delete di articoli.
 Requisiti:
 
 - Python 3.10+
-- PostgreSQL
+- PostgreSQL installato e in esecuzione
 
 Clona il progetto:
 
 git clone https://github.com/ChiocciolaVicenzo/FastAPI-PostgreSQL-CRUD-API.git
-
-cd FastAPI-PostgreSQL-CRUD-API
 
 Crea un Venv sul terminale:
 
