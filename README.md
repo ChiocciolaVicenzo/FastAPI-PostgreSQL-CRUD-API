@@ -6,7 +6,6 @@ Requisiti:
 - PostgreSQL
 
 Clona il progetto:
-
 git clone https://github.com/ChiocciolaVicenzo/FastAPI-PostgreSQL-CRUD-API.git
 cd FastAPI-PostgreSQL-CRUD-API
 
