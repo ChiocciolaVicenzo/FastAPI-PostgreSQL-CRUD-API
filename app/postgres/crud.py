@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 import app.postgres.schemas as schemas, app.postgres.models as models
 
+
 def create_articles(db: Session, article: schemas.ArticlesCreate):
     db_article = models.Article(**article.model_dump())
     db.add(db_article)
