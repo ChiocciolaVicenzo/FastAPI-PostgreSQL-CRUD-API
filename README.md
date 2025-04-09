@@ -18,9 +18,13 @@ Installa le dipendenze:
 
 pip install -r requirements.txt
 
-Crea un file .env con la connessione al DB:
+Fare l'injection e nell'Environment Variables mettere la variabile del DATABASE_URL
 
-DATABASE_URL=postgresql://{username}:{password}@localhost:{port}/{database}
+Su Pycharm: 
+Andare su Run->Edit Configurations...->Aggiungi Python e mettere script (main.py), la directory e alla fine le variabili del DATABASE_URL
+
+Su VSCode:
+Andare su Run->Add Configuration...->python->aggiungere "env":{"DATABASE_URL" : "postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}"}->apri il terminale e scrivi: $env:DATABASE_URL="postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}"; python main.py 
 
 Avvio dell'applicazione:
 
