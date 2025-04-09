@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 Crea un file .env con la connessione al DB:
 
-DATABASE_URL=postgresql://user:password@localhost:5432/tuo_database
+DATABASE_URL=postgresql://{username}:{password}@localhost:{port}/{database}
 
 Avvio dell'applicazione:
 
