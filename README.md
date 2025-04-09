@@ -31,7 +31,7 @@ Avvio dell'applicazione:
 - Su Pycharm:
     Basta startare lo script che hai aggiunto tramite injection
 
-- Su vscode:
+- Su vscode (sul terminale):
     $env:DATABASE_URL="postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}"; python main.py
 
 Come vedere la documentazione Swagger:
