@@ -18,7 +18,7 @@ Installa le dipendenze:
 
 pip install -r requirements.txt
 
-Fare l'injection e nell'Environment Variables mettere la variabile del DATABASE_URL:
+Fare l'injection e mettere la variabile del DATABASE_URL:
 
 - Su Pycharm: 
 Andare su Run->Edit Configurations...->Aggiungi Python e mettere script (main.py), la directory e alla fine le variabili del DATABASE_URL: postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}
