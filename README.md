@@ -18,13 +18,21 @@ Installa le dipendenze:
 
 pip install -r requirements.txt
 
-Crea un file .env con la connessione al DB:
+Fare l'injection e nell'Environment Variables mettere la variabile del DATABASE_URL:
 
-DATABASE_URL=postgresql://{username}:{password}@localhost:{port}/{database}
+- Su Pycharm: 
+Andare su Run->Edit Configurations...->Aggiungi Python e mettere script (main.py), la directory e alla fine le variabili del DATABASE_URL: postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}
+
+- Su VSCode:
+Andare su Run->Add Configuration...->python->aggiungere "env":{"DATABASE_URL" : "postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}"} 
 
 Avvio dell'applicazione:
 
-uvicorn main:app --reload
+- Su Pycharm:
+    Basta startare lo script che hai aggiunto tramite injection
+
+- Su vscode:
+    $env:DATABASE_URL="postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}"; python main.py
 
 Come vedere la documentazione Swagger:
 
