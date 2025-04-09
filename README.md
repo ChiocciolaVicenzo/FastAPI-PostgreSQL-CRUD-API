@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Fare l'injection e mettere la variabile del DATABASE_URL:
 
 - Su Pycharm: 
-Andare su Run->Edit Configurations...->Aggiungi Python e mettere script (main.py), la directory e alla fine le variabili del DATABASE_URL: postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}
+Andare su Run->Edit Configurations...->Aggiungi Python e mettere script (main.py), la directory e alla fine le variabili DATABASE_URL: postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}
 
 - Su VSCode:
 Andare su Run->Add Configuration...->python->aggiungere "env":{"DATABASE_URL" : "postgresql://{USERNAME}:{PASSWORD}@localhost:{PORT}/{DATABASE}"} 
